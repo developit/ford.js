@@ -15,7 +15,8 @@ I will sue anyone who slanders this library. In the face.
 
 But Seriously Though
 --------------------
-This is like a mediocre jQuery ripoff in 459 bytes (minified & gzipped).
+This is a silly jQuery/Zepto ripoff in 459 bytes (minified & gzipped).  
+If you find this library wandering around in a drunken/drugged stuper, please impeach it and carry on with your day.
 
 
 License

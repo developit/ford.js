@@ -1,0 +1,8 @@
+{
+	"name": "ford.js",
+	"main": "src/ford.js",
+	"version": "0.1.0",
+	"dependencies": {},
+	"devDependencies": {},
+	"license": "MIT"
+}

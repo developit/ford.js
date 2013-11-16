@@ -2,6 +2,16 @@
 	"name": "ford.js",
 	"main": "src/ford.js",
 	"version": "0.1.0",
+	"description": "The library nobody wants but that is for some reason still mayor.",
+	"keywords": [
+		"ford",
+		"ford.js",
+		"mayor",
+		"crack",
+		"cocaine",
+		"dom",
+		"jquery"
+	],
 	"dependencies": {},
 	"devDependencies": {},
 	"license": "MIT"

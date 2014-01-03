@@ -22,3 +22,7 @@ If you find this library wandering around in a drunken/drugged stuper, please im
 License
 -------
 MIT
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/developit/ford.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

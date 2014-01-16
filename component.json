@@ -2,7 +2,7 @@
 	"name": "ford.js",
 	"repo": "component/ford",
 	"description": "The library nobody wants but that is for some reason still mayor.",
-	"version": "0.1.0",
+	"version": "0.2.0",
 	"keywords": [
 		"ford",
 		"ford.js",
@@ -16,6 +16,6 @@
 	"development": {},
 	"license": "MIT",
 	"scripts": [
-		"src/ford.js"
+		"dist/0.2.0/ford.js"
 	]
 }

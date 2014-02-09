@@ -36,11 +36,11 @@ $.extend($.fn, {
 	css : wrap(function(s){ $.extend(this, s); }),
 	remove : wrap(function(){this.parentNode.removeChild(this);}),
 	text : wrap(function(t){
-		if (arguments.length) return this.textContent;
+		if (!arguments.length) return this.textContent;
 		this.textContent = t;
 	}),
 	html : wrap(function(h){
-		if (arguments.length) return this.innerHTML;
+		if (!arguments.length) return this.innerHTML;
 		this.innerHTML = h;
 	})
 });

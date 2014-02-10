@@ -1,6 +1,7 @@
 ford.js
 =======
-The library nobody wants but that is for some reason still mayor.
+The library nobody wants but that is for some reason still mayor.  
+[![Build Status](https://travis-ci.org/developit/ford.js.png?branch=master)](https://travis-ci.org/developit/ford.js)  
 
 
 Warning

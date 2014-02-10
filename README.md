@@ -1,7 +1,9 @@
 ford.js
 =======
 The library nobody wants but that is for some reason still mayor.  
-[![Build Status](https://travis-ci.org/developit/ford.js.png?branch=master)](https://travis-ci.org/developit/ford.js)  
+[![Build Status](https://travis-ci.org/developit/ford.js.png?branch=master)](https://travis-ci.org/developit/ford.js "Build Status") 
+[![Dependency Status](https://david-dm.org/developit/ford.js.png)](https://david-dm.org/developit/ford.js "Dependency Status") 
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/developit/ford.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")  
 
 
 Warning
@@ -23,7 +25,3 @@ If you find this library wandering around in a drunken/drugged stuper, please im
 License
 -------
 MIT
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/developit/ford.js/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-

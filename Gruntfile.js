@@ -11,7 +11,7 @@ module.exports = function(grunt) {
 				src: [
 					'src/**/*.js'
 				],
-				dest: 'dist/<%= pkg.version %>/<%= pkg.name %>.js'
+				dest: 'dist/<%= pkg.version %>/ford.js'
 			}
 		},
 		
@@ -21,7 +21,7 @@ module.exports = function(grunt) {
 					banner: '/*! <%= pkg.name %> <%= pkg.version %> */\n'
 				},
 				files: {
-					'dist/<%= pkg.version %>/<%= pkg.name %>.min.js': [
+					'dist/<%= pkg.version %>/ford.min.js': [
 						'<%= concat.main.dest %>'
 					]
 				}

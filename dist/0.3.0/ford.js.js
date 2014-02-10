@@ -44,7 +44,7 @@ $.extend($.fn, {
 	each : wrap(function(f){ return f(this); }),
 	children : function() {
 		for (var i=0,a=[]; i<this.length; i++) {
-			a.push.apply(a, this[i].children);
+			a.push.apply(a, $.arr(this[i].children));
 		}
 		return $(a);
 	},
@@ -56,8 +56,8 @@ $.extend($.fn, {
 	declassify : wrap('remove', 'classList', false),
 	hasClass : wrap('contains', 'classList'),
 	toggleClass : wrap('toggle', 'classList', false),
-	css : wrap(function(s, c) {
-		if (!s || s.charAt) return (c = this.offsetParent ? getComputedStyle(this,null) : this.style) && s ? c[s] : c;
+	css : wrap(function(s, c, p) {
+		if (!s || s.charAt) return p=this.style, (c = this.offsetParent ? getComputedStyle(this,null) : p) && s ? (c[s] || p[s]) : c;
 		$.extend(this.style, s);
 	}),
 	

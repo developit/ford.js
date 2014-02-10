@@ -13,7 +13,7 @@
 
 
 		<!-- source -->
-		<script src="../../src/puredom.js"></script>
+		<script src="../../src/ford.js"></script>
 
 
 		<script>
@@ -37,9 +37,9 @@
 					}
 				},
 
-				'puredom.el()' : function() {
+				'ford.js' : function() {
 					this.count = (this.count + 1) % 300;
-					puredom.el('#div'+this.count);
+					$('#div'+this.count);
 				},
 
 				'querySelectorAll()' : function() {

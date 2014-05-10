@@ -1,6 +1,6 @@
 {
   "name": "ford.js",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "scripts": {
     "build": "npm install && grunt",
     "start": "grunt watch",

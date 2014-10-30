@@ -1,5 +1,6 @@
 ford.js
 =======
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/developit/ford.js?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 The library nobody wants but that is for some reason still mayor.  
 [![Build Status](https://travis-ci.org/developit/ford.js.png?branch=master)](https://travis-ci.org/developit/ford.js "Build Status") 
 [![Dependency Status](https://david-dm.org/developit/ford.js.png)](https://david-dm.org/developit/ford.js "Dependency Status") 

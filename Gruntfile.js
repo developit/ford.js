@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
 	grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
-		
+
 		concat: {
 			options: {
 				separator: '\n'
@@ -11,23 +11,23 @@ module.exports = function(grunt) {
 				src: [
 					'src/**/*.js'
 				],
-				dest: 'dist/<%= pkg.version %>/ford.js'
+				dest: 'dist/ford.js'
 			}
 		},
-		
+
 		uglify: {
 			main : {
 				options: {
 					banner: '/*! <%= pkg.name %> <%= pkg.version %> */\n'
 				},
 				files: {
-					'dist/<%= pkg.version %>/ford.min.js': [
+					'dist/ford.min.js': [
 						'<%= concat.main.dest %>'
 					]
 				}
 			}
 		},
-		
+
 		jshint : {
 			options : {
 				'browser' : true
@@ -49,7 +49,7 @@ module.exports = function(grunt) {
 				]
 			}
 		},
-		
+
 		mocha : {
 			test : {
 				options : {
@@ -61,7 +61,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		
+
 		watch : {
 			options : {
 				interrupt : true

@@ -1,7 +1,7 @@
 {
 	"name": "ford.js",
-	"main": "src/ford.js",
-	"version": "0.4.1",
+	"main": "dist/ford.js",
+	"version": "0.5.0",
 	"description": "The library nobody wants but that is for some reason still mayor.",
 	"keywords": [
 		"ford",
@@ -16,7 +16,8 @@
 	"devDependencies": {},
 	"ignore": [
 		"**/.*",
-		"dist",
+		"**/*.min.js",
+		"src",
 		"test",
 		"README.md",
 		"LICENSE",

@@ -72,7 +72,8 @@
 		append : wrap('appendChild', 0, false),
 		appendTo : function(p){ return $(p).append(this); },
 		remove : wrap('remove', 0, false),
-		parent : function(s,p){ p=this[0]; while((p=p.parentNode) && (s && !p.matches(s))); return p; },
+		parent : map(function(s,p){ p=this; while((p=p.parentNode) && (s && !p.matches(s))); return p; }),
+		query : map('querySelectorAll'),
 
 		on : wrap('addEventListener', 0, false),
 		off : wrap('removeEventListener', 0, false),

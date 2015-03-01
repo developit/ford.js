@@ -10,9 +10,9 @@
 
 	function $(p,w) {
 		return $.extend(
-			typeof p==='string' ? (
-				p[0]==='<' ? (s.innerHTML=p, p=s.childNodes) : (w || document).querySelectorAll(p)
-			) : $.arr(p),
+			$.arr( typeof p==='string' ? (
+				p[0]==='<' ? (s.innerHTML=p, s.childNodes) : (w || document).querySelectorAll(p)
+			) : p),
 			$.fn
 		);
 	}

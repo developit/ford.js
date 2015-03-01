@@ -87,6 +87,8 @@
 			if (!s || s.charAt) return p=this.style, (c = this.offsetParent ? getComputedStyle(this,null) : p) && s ? (c[s] || p[s]) : c;
 			$.extend(this.style, s);
 		}),
+		show : function(){ return this.css({ display:'' }); },
+		hide : function(){ return this.css({ display:'none' }); },
 
 		text : wrap(function(t) {
 			if (t==null) return this.textContent;

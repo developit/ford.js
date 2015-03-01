@@ -66,7 +66,7 @@
 	$.extend($.fn, {
 		map : map,
 		_wrap : wrap,
-		each : wrap(function(f){ return f(this); }),
+		each : wrap(function(f){ return f($(this)); }),
 
 		children : map('children'),
 		append : wrap('appendChild', 0, false),
@@ -107,9 +107,9 @@
 			this[k] = v;
 		}),
 
-		tpl : wrap(function(fields) {
-			$('[tpl]', this).each(function(n) {
-				var tpl = n.getAttribute('tpl').replace(/\s+/,''),
+		tpl : function(fields) {
+			this.query('[tpl]').each(function(n) {
+				var tpl = n.attr('tpl').replace(/\s+/,''),
 					r = /(.+?)\:(.+?)(;|$)/g,
 					t, k, i, v;
 				r.lastIndex = 0;
@@ -119,7 +119,8 @@
 					(typeof n[k]==='function' ? n[k](v) : (n[k] = v));
 				}
 			});
-		})
+			return this;
+		}
 	});
 
 	$.tplMap = {

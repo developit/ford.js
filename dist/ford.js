@@ -10,9 +10,9 @@
 
 	function $(p,w) {
 		return $.extend(
-			typeof p==='string' ? (
-				p[0]==='<' ? (s.innerHTML=p, p=s.childNodes) : (w || document).querySelectorAll(p)
-			) : $.arr(p),
+			$.arr( typeof p==='string' ? (
+				p[0]==='<' ? (s.innerHTML=p, s.childNodes) : (w || document).querySelectorAll(p)
+			) : p),
 			$.fn
 		);
 	}
@@ -70,7 +70,7 @@
 
 		children : map('children'),
 		append : wrap('appendChild', 0, false),
-		appendTo : function(p){ return $(p).append(this); },
+		appendTo : function(p){ $(p).append(this[0]); return this; },
 		remove : wrap('remove', 0, false),
 		parent : map(function(s,p){ p=this; while((p=p.parentNode) && (s && !p.matches(s))); return p; }),
 		query : map('querySelectorAll'),
@@ -87,6 +87,8 @@
 			if (!s || s.charAt) return p=this.style, (c = this.offsetParent ? getComputedStyle(this,null) : p) && s ? (c[s] || p[s]) : c;
 			$.extend(this.style, s);
 		}),
+		show : function(){ return this.css({ display:'' }); },
+		hide : function(){ return this.css({ display:'none' }); },
 
 		text : wrap(function(t) {
 			if (t==null) return this.textContent;

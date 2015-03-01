@@ -1,6 +1,6 @@
 {
   "name": "ford.js",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": "dist/ford.js",
   "scripts": {
     "build": "npm install && grunt",

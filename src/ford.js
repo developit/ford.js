@@ -70,7 +70,7 @@
 
 		children : map('children'),
 		append : wrap('appendChild', 0, false),
-		appendTo : function(p){ return $(p).append(this); },
+		appendTo : function(p){ $(p).append(this[0]); return this; },
 		remove : wrap('remove', 0, false),
 		parent : map(function(s,p){ p=this; while((p=p.parentNode) && (s && !p.matches(s))); return p; }),
 		query : map('querySelectorAll'),

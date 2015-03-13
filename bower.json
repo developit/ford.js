@@ -1,7 +1,7 @@
 {
 	"name": "ford.js",
 	"main": "dist/ford.js",
-	"version": "0.7.0",
+	"version": "0.7.1",
 	"description": "The library nobody wants but that is for some reason still mayor.",
 	"keywords": [
 		"ford",

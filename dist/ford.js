@@ -116,18 +116,12 @@
 				while ((t=r.exec(tpl))) {
 					k = $.tplMap[t[1]] || t[1];
 					v = fields[t[2]];
-					(typeof n[k]==='function' ? n[k](v) : (n[k] = v));
+					(typeof n[k]==='function' ? n[k](v) : (n[0][k] = v));
 				}
 			});
 			return this;
 		}
 	});
-
-	$.tplMap = {
-		html : 'innerHTML',
-		text : 'textContent',
-		attr : 'setAttribute'
-	};
 
 	return $;
 }));

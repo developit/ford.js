@@ -68,6 +68,7 @@
 		_wrap : wrap,
 		each : wrap(function(f){ return f($(this)); }),
 
+		clone : map('cloneNode'),
 		children : map('children'),
 		append : wrap('appendChild', 0, false),
 		appendTo : function(p){ $(p).append(this[0]); return this; },
@@ -114,9 +115,7 @@
 					t, k, i, v;
 				r.lastIndex = 0;
 				while ((t=r.exec(tpl))) {
-					k = $.tplMap[t[1]] || t[1];
-					v = fields[t[2]];
-					(typeof n[k]==='function' ? n[k](v) : (n[0][k] = v));
+					n[ t[1] ]( fields[t[2]] );
 				}
 			});
 			return this;
